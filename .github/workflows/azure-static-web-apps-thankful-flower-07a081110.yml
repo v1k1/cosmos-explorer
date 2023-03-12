@@ -16,8 +16,7 @@ jobs:
     name: Build and Deploy Job
     steps:
       - name: Add Alias
-        run: echo 'alias npm="npm --force"' >> ~/.bashrc
-        run: source ~/.bashrc
+        run: echo 'alias npm="npm --force"' >> ~/.bashrc; source ~/.bashrc
       - uses: actions/checkout@v2
         with:
           submodules: true
