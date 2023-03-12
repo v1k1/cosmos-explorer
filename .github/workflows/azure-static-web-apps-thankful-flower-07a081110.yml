@@ -1,4 +1,4 @@
-name: Azure Static Web Apps CI/CD
+name: Azure Static Web Apps CI/CD 2
 
 on:
   push:
@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-        - name: Add Alias
+      - name: Add Alias
         run: echo 'alias npm="npm --force"' >> ~/.bashrc
       - uses: actions/checkout@v2
         with:
